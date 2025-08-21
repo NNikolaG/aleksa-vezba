@@ -1,0 +1,16 @@
+<div class="page-content">
+  <h2>Our Products</h2>
+  <p>Explore our range of products and services.</p>
+  <div class="product-grid">
+    @for (product of products; track product.id) {
+      <div class="product-card">
+        <h3>{{ product?.name }}</h3>
+        <p>{{ product?.material }}</p>
+        <small>{{ product?.description }}</small>
+        <div class="image">
+          <img [src]="product?.image" alt="product">
+        </div>
+      </div>
+    }
+  </div>
+</div>
