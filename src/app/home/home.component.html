@@ -1,12 +1,27 @@
-<div class="page-content">
-  <h2>Welcome to the Home Page</h2>
-  <p>This is the home page of our Angular routing demonstration. Navigate through the different pages using the navigation menu above.</p>
-  <div class="feature-list">
-    <h3>Featured Content:</h3>
-    <ul>
-      <li>Angular Routing Examples</li>
-      <li>Component Navigation</li>
-      <li>Active Route Highlighting</li>
+<div class="home-container">
+
+  <nav class="nav">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <ul class="menu">
+      <li class="dropdown">
+        <a routerLink="/home" routerLinkActive="active">
+          Fragrances +
+        </a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/home/prduct1">Product 1 +</a></li>
+          <li><a routerLink="/home/product2">Product 2 +</a></li>
+          <li><a routerLink="/home/produc3">Product 3 +</a></li>
+          <li><a routerLink="/home/product4">Product 4 +</a></li>
+          <li><a routerLink="/home/product5">Product 5 +</a></li>
+        </ul>
+      </li>
     </ul>
-  </div>
+    <a [routerLink]="['about']" routerLinkActive="active">Info +</a>
+    <a [routerLink]="['products']" routerLinkActive="active">Products +</a>
+    <a [routerLink]="['contact']" routerLinkActive="active">Contact</a>
+    <h5>English</h5>
+  </nav>
+
+  <div class="home-container"></div>
+  <router-outlet></router-outlet>
 </div>

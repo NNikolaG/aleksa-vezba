@@ -1,14 +1,35 @@
-import {Routes} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {AboutComponent} from './about/about.component';
-import {ContactComponent} from './contact/contact.component';
-import {ProductsComponent} from './products/products.component';
+// import {Routes} from '@angular/router';
+// import {HomeComponent} from './home/home.component';
+// import {AboutComponent} from './about/about.component';
+// import {ContactComponent} from './contact/contact.component';
+// import {ProductsComponent} from './products/products.component';
+
+// export const routes: Routes = [
+//   {path: '', redirectTo: '/home', pathMatch: 'full'},
+//   {path: 'home', component: HomeComponent},
+//   {path: 'about', component: AboutComponent},
+//   {path: 'contact', component: ContactComponent},
+//   {path: 'products', component: ProductsComponent},
+//   {path: '**', redirectTo: '/home'}
+// ];
+
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: '**', redirectTo: '/home'}
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
+  {
+    path:'',
+    component:HomeComponent,
+     children: [
+      { path: 'about', component: AboutComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'login', component: LoginComponent },
+    ]
+  }
 ];

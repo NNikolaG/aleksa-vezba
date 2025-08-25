@@ -1,0 +1,126 @@
+/* .home-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #1976d2, #42a5f5);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn.shop-now {
+  background-color: white;
+  color: #1976d2;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.shop-now:hover {
+  background-color: #f0f0f0;
+}
+
+.featured-products {
+  margin-bottom: 3rem;
+}
+
+.featured-products h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn.add-to-cart {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.add-to-cart:hover {
+  background-color: #1565c0;
+}
+
+.promo-banner {
+  text-align: center;
+  background-color: #e3f2fd;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.promo-banner h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.promo-banner p {
+  font-size: 1rem;
+  color: #555;
+} */
+
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+
+.hero, .promo-banner {
+  position: relative;
+  z-index: 1; 
+  color: white;
+  text-align: center;
+}

@@ -1,15 +1,26 @@
 <div class="app-container">
+  <div class="pre-header" *ngIf="showPreHeader">
+    <div class="text-slider">
+      <span>
+        Free shipping on orders over $50! | Free shipping on orders over $50! | Free shipping on orders over $50!
+      </span>
+    </div>
+  </div>
+
   <header class="header">
-    <h1>Angular Routing Demo</h1>
-    <nav class="nav">
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/products" routerLinkActive="active">Products</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    </nav>
+    <h1 class="logo">Logo</h1>
+    
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search-input"/>
+      <button class="btn login-btn" routerLink="/login">Login</button>
+      <button class="btn cart-btn" routerLink="/cart">Cart(0)</button>
+    </div>
   </header>
 
+
   <main class="main-content">
-    <router-outlet/>
+   <router-outlet></router-outlet>
   </main>
 </div>
+
+
